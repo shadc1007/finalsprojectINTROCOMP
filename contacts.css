@@ -124,6 +124,9 @@ span.line {
 
 .containertext {
     width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 
@@ -243,6 +246,12 @@ a.link:hover{
     padding: 7px;
 }
 
+.link a:hover {
+    color: #800000;
+}
+
+/* responsive */
+
 
 @media (max-width: 768px) {
 
@@ -361,6 +370,9 @@ a.link:hover{
     }
 
     .card {
+        overflow: hidden;
+        width: auto;
+        height: auto;
         padding: 0.5;
     }
 
@@ -383,6 +395,7 @@ a.link:hover{
     .containertext p {
         font-size: 0.7rem;
     }
+
     
   }
 
